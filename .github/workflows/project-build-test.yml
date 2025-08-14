@@ -20,7 +20,7 @@ jobs:
       release_built: ${{ steps.set-output.outputs.release_built }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Rust
         run: rustup update stable && rustup default stable
