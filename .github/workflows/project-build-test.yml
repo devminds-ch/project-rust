@@ -47,7 +47,7 @@ jobs:
         run: cargo build --profile ${{ matrix.BUILD_TARGET }}
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: rust_training_project-${{ matrix.BUILD_TARGET }}
           path: target/${{ matrix.BUILD_TARGET }}/rust_training_project
