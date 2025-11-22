@@ -14,6 +14,8 @@ jobs:
   build_and_test:
     #runs-on: ubuntu-latest
     runs-on: devminds-amd64
+    container:
+      image: rust:1.91.1
     strategy:
       matrix:
         BUILD_TARGET: [release] # refers to a cargo profile
@@ -23,8 +25,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5
 
-      - name: Set up Rust
-        run: rustup update stable && rustup default stable
+      - name: Install components
+        run: rustup component add rustfmt clippy
 
       - name: Cache
         uses: actions/cache@v4
