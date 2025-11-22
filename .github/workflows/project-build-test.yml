@@ -23,7 +23,7 @@ jobs:
       release_built: ${{ steps.set-output.outputs.release_built }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Install components
         run: rustup component add rustfmt clippy
