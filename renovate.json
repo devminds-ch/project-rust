@@ -13,6 +13,12 @@
       "matchManagers": [
         "github-actions"
       ]
+    },
+    {
+      "groupName": "Rust",
+      "matchManagers": [
+        "cargo"
+      ]
     }
   ]
 }
