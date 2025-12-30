@@ -15,7 +15,7 @@ jobs:
     #runs-on: ubuntu-latest
     runs-on: devminds-amd64
     container:
-      image: rust:1.91.1
+      image: rust:1.92.0
     strategy:
       matrix:
         BUILD_TARGET: [release] # refers to a cargo profile
