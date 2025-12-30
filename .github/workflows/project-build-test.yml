@@ -29,7 +29,7 @@ jobs:
         run: rustup component add rustfmt clippy
 
       - name: Cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: |
             ~/.cargo/registry
@@ -47,7 +47,7 @@ jobs:
         run: cargo build --profile ${{ matrix.BUILD_TARGET }}
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: rust_training_project-${{ matrix.BUILD_TARGET }}
           path: target/${{ matrix.BUILD_TARGET }}/rust_training_project
