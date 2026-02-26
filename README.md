@@ -1,12 +1,12 @@
 # Rust Training Project by [devminds GmbH](https://devminds.ch)
 
-This Rust project is used for DevOps CI/CD trainings.
+This Rust project is used for trainings offered by devminds GmbH.
 
 The project contains an application providing a CLI to calculate the sum of two numbers.
 
-```bash
+```
 Rust training project by devminds GmbH
-This Rust project is used for DevOps CI/CD trainings.
+This Rust project is used for trainings offered by devminds GmbH.
 The project contains an application providing a CLI to calculate the sum of two numbers.
 
 Usage: rust_training_project <COMMAND>
@@ -38,6 +38,14 @@ Build the Rust application release profile:
 
 ```bash
 cargo build --profile release
+```
+
+### Build application documentation
+
+Build the application documentation:
+
+```bash
+cargo doc --no-deps --profile release
 ```
 
 ### Run Rust static analysis

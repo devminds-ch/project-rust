@@ -19,7 +19,7 @@ use clap::{Parser, Subcommand};
     version,
     about = "Rust training project by devminds GmbH",
     long_about = r#"Rust training project by devminds GmbH
-This Rust project is used for DevOps CI/CD trainings.
+This Rust project is used for trainings offered by devminds GmbH.
 The project contains an application providing a CLI to calculate the sum of two numbers."#,
     subcommand_required = true
 )]
