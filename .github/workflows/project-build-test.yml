@@ -53,3 +53,6 @@ jobs:
 
       - name: Run tests in "${{ matrix.BUILD_TARGET }}" mode
         run: cargo test --profile ${{ matrix.BUILD_TARGET }}
+
+      - name: Build documentation
+        run: cargo doc --no-deps --profile ${{ matrix.BUILD_TARGET }}
