@@ -14,7 +14,7 @@ jobs:
   build_and_test:
     runs-on: ubuntu-latest
     container:
-      image: rust:1.94.0
+      image: rust:1.97.0
     strategy:
       matrix:
         BUILD_TARGET: [release] # refers to a cargo profile
